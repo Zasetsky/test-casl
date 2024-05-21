@@ -1,0 +1,36 @@
+{
+  "roles": [
+    {
+      "id": 1,
+      "name": "Бухгалтер",
+      "permissions": [
+        {
+          "resource": "invoices",
+          "actions": ["read", "create", "update", "delete"],
+          "department_id": 1
+        },
+        {
+          "resource": "payments",
+          "actions": ["read"],
+          "department_id": 1
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Менеджер",
+      "permissions": [
+        {
+          "resource": "clients",
+          "actions": ["read", "create", "update"],
+          "department_id": 2
+        },
+        {
+          "resource": "orders",
+          "actions": ["read", "create"],
+          "department_id": 2
+        }
+      ]
+    }
+  ]
+}
